@@ -40,6 +40,7 @@ jobs:
             ${{ runner.os }}-pip-
       
       - name: Install dependencies
+        working-directory: ./assignment10  
         env:
           DATABASE_URL: postgresql://user:password@localhost:5432/mytestdb
         run: |
